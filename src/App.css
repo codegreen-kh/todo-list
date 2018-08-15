@@ -1,0 +1,209 @@
+@import url(../node_modules/material-components-web/dist/material-components-web.css);
+@import "https://fonts.googleapis.com/css?family=Roboto";
+.App {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  white-space: nowrap;
+  text-align: center; }
+  .App:before {
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    content: ''; }
+  .App .start-screen {
+    margin: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    white-space: normal;
+    width: 260px; }
+    .App .start-screen .hello-text {
+      color: white; }
+    .App .start-screen .login-btn, .App .start-screen .registration-btn {
+      margin: 10px 10px;
+      width: 40%;
+      background-color: blue;
+      color: white; }
+    .App .start-screen .registration-btn {
+      float: right; }
+    .App .start-screen .login-btn {
+      float: left; }
+  .App .login-form {
+    margin: 10px;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    white-space: normal;
+    width: 260px; }
+    .App .login-form h2 {
+      text-align: center;
+      color: white; }
+    .App .login-form .mdc-text-field__input {
+      margin-bottom: 8px;
+      padding-bottom: 4px; }
+    .App .login-form .login-btn, .App .login-form .cancel-btn {
+      margin: 10px 10px;
+      background-color: blue;
+      color: white; }
+    .App .login-form .cancel-btn {
+      float: right; }
+  .App .signup-form {
+    margin: 10px;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    white-space: normal;
+    width: 260px; }
+    .App .signup-form h2 {
+      text-align: center;
+      color: white; }
+    .App .signup-form .mdc-text-field__input {
+      margin-bottom: 8px;
+      padding-bottom: 4px; }
+    .App .signup-form .register-btn, .App .signup-form .cancel-btn {
+      margin: 10px 10px;
+      background-color: blue;
+      color: white; }
+    .App .signup-form .cancel-btn {
+      float: right; }
+    .App .signup-form .register-btn {
+      float: left; }
+  .App .to-do-lists {
+    margin: 10px;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    white-space: normal;
+    width: 350px; }
+    .App .to-do-lists .user-info {
+      clear: both;
+      height: 70px;
+      border-bottom: 1px white solid; }
+      .App .to-do-lists .user-info .user-name-email {
+        height: 70px;
+        float: left;
+        width: 55%; }
+        .App .to-do-lists .user-info .user-name-email .user-name {
+          display: block;
+          margin: 15px 10px 5px 10px;
+          font-size: 16px;
+          color: white; }
+        .App .to-do-lists .user-info .user-name-email .user-email {
+          display: block;
+          margin: 5px 10px 10px 10px;
+          font-size: 12px;
+          color: white; }
+      .App .to-do-lists .user-info .log-out-div {
+        width: 45%;
+        float: right;
+        height: 70px; }
+        .App .to-do-lists .user-info .log-out-div .log-out-btn {
+          float: right;
+          margin: 17px 10px;
+          background-color: blue;
+          color: white; }
+    .App .to-do-lists .lists {
+      clear: both;
+      margin: 25px 0 25px 0; }
+  .App .single-list-form {
+    margin: 10px;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    white-space: normal;
+    width: 350px; }
+    .App .single-list-form .list-data {
+      height: 40px;
+      border-bottom: 1px solid gray; }
+      .App .single-list-form .list-data .back-to-lists {
+        float: left;
+        background-color: transparent;
+        border: none;
+        position: relative;
+        top: 2px;
+        padding: 0;
+        margin: 0 10px; }
+        .App .single-list-form .list-data .back-to-lists i {
+          font-size: 34px;
+          color: white;
+          transition: 1s; }
+          .App .single-list-form .list-data .back-to-lists i:hover {
+            color: blueviolet;
+            transition: 1s; }
+      .App .single-list-form .list-data .list-name {
+        float: right;
+        font-size: 32px;
+        color: white;
+        margin: 0 10px; }
+    .App .single-list-form .list-update-time {
+      border-bottom: 1px solid gray;
+      height: 40px; }
+      .App .single-list-form .list-update-time .updated-date {
+        float: right;
+        margin: 10px 0;
+        font-size: 16px;
+        color: white; }
+      .App .single-list-form .list-update-time .date {
+        float: right;
+        margin: 10px 10px;
+        font-size: 16px;
+        color: white; }
+    .App .single-list-form .list-of-tasks {
+      margin: 30px 0; }
+  .App .task {
+    width: 350px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 0;
+    border-bottom: 1px gray solid; }
+    .App .task .task-name {
+      float: left;
+      margin: 0 10px;
+      color: white;
+      font-size: 14px; }
+    .App .task .done {
+      color: red;
+      text-decoration: line-through; }
+    .App .task .delete-task {
+      float: right;
+      margin: 0 10px;
+      height: 40px;
+      border: none;
+      color: white;
+      background-color: transparent;
+      font-size: 34px;
+      padding: 0; }
+      .App .task .delete-task:active {
+        font-size: 48px; }
+      .App .task .delete-task::before, .App .task .delete-task::after {
+        background-color: transparent; }
+  .App .add-new-task {
+    display: block;
+    clear: both;
+    height: 36px;
+    margin-top: 40px; }
+    .App .add-new-task .new-task-name {
+      width: 70%;
+      padding-left: 10px; }
+    .App .add-new-task .add-new-btn {
+      position: relative;
+      bottom: 5px;
+      margin: 0 7px;
+      background-color: blue;
+      color: white;
+      font-size: 34px;
+      width: 20%;
+      float: right;
+      background-color: transparent; }
+      .App .add-new-task .add-new-btn::before, .App .add-new-task .add-new-btn::after {
+        background-color: transparent; }
+      .App .add-new-task .add-new-btn:active {
+        font-size: 42px; }
